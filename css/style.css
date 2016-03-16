@@ -1,0 +1,180 @@
+@import url('animate.css');
+
+body
+{
+	margin: 0;
+}
+
+.pushmenu
+{
+	/*this is the nav*/
+	background: #3c3933;
+	font-family: Arial, Helvetics, sans-serif;
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+	position: fixed;
+}
+
+.pushmenu h3
+{
+	color: #cbbfad;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 15px 20px;
+	margin: 0;
+	background: #282522;
+}
+
+.pushmenu a
+{
+	display: block; /* drops the nav vertically*/
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	text-decoration: none;
+	border-top: 1px solid #56544e;
+	border-bottom: 1px solid #312e2a;
+	padding: 14px;
+}
+
+.pushmenu a:hover
+{
+	background: #00A287;
+}
+
+.pushmenu a:active
+{
+	background: #454f5c;
+	color: #fff;
+}
+
+.pushmenu-left
+{
+	left: -240px;
+}
+
+.pushmenu-left.pushmenu-open
+{
+	left: 0;
+}
+
+.pushmenu-push
+{
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.pushmenu-push-toright
+{
+	left: 240px;
+}
+
+/*Transition*/
+.pushmenu, .pushmenu-push
+{
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#nav_list
+{
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.title
+{
+	font-size: 2em;
+	line-height: 1;
+	margin-left: -34px;
+}
+
+#collapseExample a
+{
+	padding-left: 40px;
+}
+
+.dataTables_filter
+{
+	display: none;
+}
+
+.nav.nav-tabs>li>a
+{
+    padding: 10px 10px;
+}
+
+.video-holder
+{
+	padding: 4px;
+	position: relative;
+}
+
+.video-overlay
+{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+	transition: all .6s ease;
+}
+
+
+
+video
+{
+	height: 74vh;
+	background-color: #373737;
+}
+
+.table-list
+{
+	height: 100vh;
+}
+
+.checklist-holder
+{
+	max-height: 74vh;
+	overflow: auto;
+	width: 100%;
+}
+
+.checkbox label, .radio label
+{
+	display: block;
+}
+
+nav-list.active
+{
+	background-position: -33px top;
+}
+
+.buttonset
+{
+	padding: 10px 20px 20px;
+	border-bottom: 1px solid #ECECEC;
+}
+
+section.content
+{
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px 20px;
+}
+
+.container-fluid
+{
+	padding: 0px;
+}
