@@ -31,8 +31,9 @@
 		    <a href="home3.html">Inventory check</a>
         </div>
 
-		<a href="#">Communication</a>
-		<a href="#">Cost-Control</a>
+		
+		<a href="?tab=2">Communication</a>
+		<a href="?tab=3">Cost-Control</a>
 		<a href="admin.html">ADMIN</a>
 		
 	</nav>
@@ -54,7 +55,7 @@
           <div>
 
               <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
+              <ul id="myTabs" class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#tab1" aria-controls="home" role="tab" data-toggle="tab">Compliance</a></li>
                 <li role="presentation"><a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">Communication</a></li>
                 <li role="presentation"><a href="#tab3" aria-controls="messages" role="tab" data-toggle="tab">Cost-Control</a></li>
@@ -220,6 +221,13 @@
 	<script src="js/jquery.dataTables.js"></script>
 	<script>
 	$(document).ready(function() {
+
+if(location.search.lastIndexOf("tab=2") != -1){
+  $('#myTabs li:eq(1) a').tab('show');
+}
+if(location.search.lastIndexOf("tab=3") != -1){
+  $('#myTabs li:eq(2) a').tab('show');
+}
 		$menuLeft = $('.pushmenu-left');
 		$nav_list = $('#nav_list');
 		
